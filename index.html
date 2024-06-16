@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-
-
-   
+    <div id="header">
+        <p>Tic Tac Toe</p>
+        <div id="playerSelection">
+            <span id="selectCircle" class="player" onclick="selectPlayer('circle')">O</span>
+            <span id="selectCross" class="player" onclick="selectPlayer('cross')">X</span>
+        </div>
+    </div>
+    <div id="content"></div>
+    <script src="script.js"></script>
 </body>
 </html>

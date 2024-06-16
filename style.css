@@ -1,0 +1,151 @@
+/* style.css */
+
+/* Hintergrundfarbe der gesamten Seite */
+body {
+    background-color: #323232;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header und Spielerwahl zentrieren */
+#header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Paragraph "Tic Tac Toe" größer und dicker */
+#header p {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    margin-block-start: 16px;
+    margin-block-end: 16px;
+}
+
+/* Spielerwahl unter dem Paragraph */
+#playerSelection {
+    margin-top: 10px;
+}
+
+.player {
+    font-size: 40px;
+    cursor: pointer;
+    margin: 0 20px;
+    transition: box-shadow 0.3s ease;
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Runde Schatten */
+}
+
+#selectCircle {
+    color: rgb(0, 140, 255);
+}
+
+#selectCross {
+    color: yellow;
+}
+
+/* Zentriert den Div-Container */
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(90vh - 115px);
+}
+
+/* Tabelle stylen */
+table {
+    border-collapse: collapse;
+}
+
+/* Zellen stylen */
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    cursor: pointer;
+    border: 5px solid white;
+}
+
+/* Stil für Kreise */
+.circle {
+    color: rgb(0, 140, 255);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Stil für Kreuze */
+.cross {
+    color: yellow;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+td:first-of-type {
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+
+td:nth-of-type(2) {
+    border-top-color: transparent;
+}
+
+td:nth-of-type(3) {
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+
+tr:nth-of-type(3) td {
+    border-bottom-color: transparent;
+}
+
+/* Schatteneffekte für ausgewählte Spieler */
+.selected {
+    box-shadow: 0 0 10px 5px #6e6e6e48;
+}
+
+td:hover {
+    background-color: #6e6e6e48;
+}
+
+/* Stil für durchgestrichene Zellen */
+.line-through {
+    text-decoration: line-through;
+}
+
+/* CSS für die Gewinnlinie */
+.winning-line {
+    position: absolute;
+    height: 5px;
+    background-color: white;
+    transform-origin: 0 50%;
+    z-index: 1;
+}
+
+/* CSS für den Neustart-Button */
+.restart-button {
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    margin: 9px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.restart-button:hover {
+    background-color: #45a049;
+}
